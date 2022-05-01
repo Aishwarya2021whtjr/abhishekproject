@@ -1,17 +1,18 @@
-import streamlit as st
 import numpy as np
 import pandas as pd
-import seaborn as sns
 import matplotlib.pyplot as plt
-from sklearn.model_selection import train_test_split
-from sklearn.model_selection import GridSearchCV
-from sklearn import tree
-from sklearn.tree import DecisionTreeClassifier
-from io import StringIO
-from sklearn.tree import export_graphviz
-from IPython.display import Image
-from sklearn.metrics import confusion_matrix, plot_confusion_matrix, classification_report
+import seaborn as sns
 import warnings
+import streamlit as st
+from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeClassifier  
+from sklearn.model_selection import GridSearchCV  
+from sklearn import tree
+from sklearn.metrics import confusion_matrix, plot_confusion_matrix, classification_report
+from sklearn.tree import export_graphviz
+from io import StringIO
+from IPython.display import Image  
+import pydotplus
 
 def app(df):
 	warnings.filterwarnings('ignore')
