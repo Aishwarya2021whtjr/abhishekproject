@@ -1,8 +1,8 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-pip install matplotlib.pyplot
-pip install seaborn
+python -m pip install matplotlib.pyplot
+python -m pip install seaborn
 import matplotlib.pyplot as plt
 
 import seaborn as sns
